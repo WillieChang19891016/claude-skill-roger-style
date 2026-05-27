@@ -78,14 +78,30 @@ roger-style/
 - [4Gamers - 羅杰 Roger 專訪](https://www.4gamers.com.tw/news/detail/31378/9-things-of-joeman-roger)
 - 使用者補充：「全對」「弟弟」
 
-## 安裝（給其他人）
+## 安裝
+
+把 repo clone 到 Claude Code 的 skills 目錄即可。
+
+**macOS / Linux**
 
 ```bash
-git clone https://github.com/<your-username>/claude-skill-roger-style.git \
+git clone https://github.com/WillieChang19891016/claude-skill-roger-style.git \
   ~/.claude/skills/roger-style
 ```
 
-或手動下載 zip 解壓到 `~/.claude/skills/roger-style/`。重啟 Claude Code 即可。
+**Windows (PowerShell)**
+
+```powershell
+git clone https://github.com/WillieChang19891016/claude-skill-roger-style.git `
+  "$env:USERPROFILE\.claude\skills\roger-style"
+```
+
+或直接 [下載 zip](https://github.com/WillieChang19891016/claude-skill-roger-style/archive/refs/heads/main.zip)，解壓後把 `claude-skill-roger-style-main` 整個資料夾改名成 `roger-style`，丟到：
+
+- macOS / Linux：`~/.claude/skills/`
+- Windows：`%USERPROFILE%\.claude\skills\`
+
+裝好後 Claude Code 重啟一次就能看到 `roger-style` 出現在 skill 列表，用 `/roger-style` 觸發。
 
 ## License
 
