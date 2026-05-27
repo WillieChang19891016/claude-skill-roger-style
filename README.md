@@ -56,7 +56,7 @@ skill 已經放在 `~/.claude/skills/roger-style/`，Claude Code 啟動時會自
 
 ```
 roger-style/
-├── SKILL.md              # 主規則、五條核心原則、工作流程
+├── SKILL.md              # 主規則、四條核心原則、工作流程
 ├── references/
 │   ├── phrases.md        # 短口頭禪清單（A~F 區，分情境）
 │   ├── quotes.md         # 整句名言（依情境分 A 結尾 / B 自嘲）
