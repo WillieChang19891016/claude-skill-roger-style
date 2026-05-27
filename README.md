@@ -25,7 +25,6 @@ skill 已經放在 `~/.claude/skills/roger-style/`，Claude Code 啟動時會自
 **不會做**：
 - 全篇 cosplay 改寫
 - 動到 code block 內容
-- 預設使用涉及私人事件的進階梗（紹安、狗狗肉、包莖等）
 
 ## 語料一覽
 
@@ -41,9 +40,7 @@ skill 已經放在 `~/.claude/skills/roger-style/`，Claude Code 啟動時會自
 | 開場 / 轉折 | 來 |
 | 稱呼使用者 | 弟弟 |
 
-### 整句名言
-
-**預設啟用（7 句）**
+### 整句名言（7 句）
 
 - 感謝訂閱
 - 來 我們來聊乾淨
@@ -53,21 +50,7 @@ skill 已經放在 `~/.claude/skills/roger-style/`，Claude Code 啟動時會自
 - 我用思念來代替
 - 就說沒有要抽狗狗肉
 
-**進階梗（4 句，預設關閉，需 hardcore 模式）**
-
-- 我 LOL 跟爐石一樣強
-- 我暴力我 EQ 低我包莖
-- 我和紹安只是朋友
-- 我再說一次 周敦頤 愛圓說
-
 每個語料的使用情境、強度、注入時機詳見 [`references/phrases.md`](references/phrases.md) 與 [`references/quotes.md`](references/quotes.md)。
-
-## 進階模式（hardcore）
-
-預設關閉的 C 區個人化名言，可用以下方式臨時開啟：
-
-- 訊息中包含「hardcore」「硬核」「全力放飛」
-- 或直接說「給我硬核版的回答」
 
 ## 檔案結構
 
@@ -76,7 +59,7 @@ roger-style/
 ├── SKILL.md              # 主規則、五條核心原則、工作流程
 ├── references/
 │   ├── phrases.md        # 短口頭禪清單（A~F 區，分情境）
-│   ├── quotes.md         # 整句名言（A/B 預設啟用、C 為 hardcore）
+│   ├── quotes.md         # 整句名言（依情境分 A 結尾 / B 自嘲）
 │   └── examples.md       # 改寫前後對照 + 反例
 └── README.md             # 本檔
 ```
@@ -93,14 +76,13 @@ roger-style/
    → 應該出現「冷靜」或「心態不能崩」
 4. 連問 5 個雜題
    → 每則口頭禪數量落在 1~3 個之間
-5. 預設情境不出現紹安 / 狗狗肉 / 包莖 / 周敦頤
 
 ## 擴充語料
 
 如果之後想加新名言：
 
 - 短口頭禪 → 編 `references/phrases.md`，依情境塞進 A~F 表
-- 整句名言 → 編 `references/quotes.md`，注意 A/B（預設啟用）與 C（hardcore）分區
+- 整句名言 → 編 `references/quotes.md`，依情境分 A（結尾）/ B（自嘲）區
 - 改寫範例 → 編 `references/examples.md`
 
 擴充後不用重啟 Claude Code，下次觸發 skill 時會直接用新內容。
